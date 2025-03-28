@@ -54,6 +54,42 @@ header a {
   display: inline-block;
 }
 
+main {
+  background-color: white;
+}
+
+.main-photo {
+  width: 593px;
+  height: 490px;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
@@ -62,16 +98,24 @@ footer {
     url("/images/footer-image.jpg");
   background-size: cover;
   color: white;
-  padding: 100px 0;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -79,7 +123,6 @@ footer h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  margin-right: 20px;
 }
 
 footer p {
@@ -87,7 +130,6 @@ footer p {
   font-size: 16px;
   line-height: 1.5;
   opacity: 0.7;
-  margin-right: 20px;
 }
 
 footer ul {
@@ -118,5 +160,22 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .main-photo {
+    display: none;
+  }
+
+  main {
+    padding: 0 30px;
   }
 }
