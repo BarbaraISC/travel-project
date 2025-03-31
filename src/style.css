@@ -252,7 +252,30 @@ footer a {
   }
 
   section {
-    padding: 30px 0;
+    padding: 30px;
+  }
+
+  .café {
+    padding: 30px;
+  }
+
+  .gallery-photos {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .gallery-photos.grid {
+    grid-gap: 0;
+  }
+
+  .gallery-photos h2 {
+    margin-top: 30px;
+  }
+
+  .gallery-photos img {
+    width: 80%;
+    height: 80%;
+    margin-left: 30px;
   }
 
   .main-photo {
